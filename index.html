@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Juan's Four Quarter Note Simple Metronome</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./main.css">
+</head>
+<body>
+	<section>
+		<h4>Beats Per Minute: <span id="rangeValue">60</span></h4>
+		<input id="bpm" type="range" min="60" max="240" value="60" 
+		onmousemove="rangeSlider(this.value)" onchange="rangeSlider(this.value)" />
+		<audio id="s1" src="./Assets/Sounds/click1.wav"></audio>
+		<audio id="s2" src="./Assets/Sounds/click2.wav"></audio>
+		<button id="play" style="border-radius: 4px; padding: 10px; background-color: #52D017; 
+			border: 1px solid #32CD32; outline: none">Play</button>
+		<script type="text/javascript" src="./metronome.js"></script>
+	</section>
+</body>
+</html>
